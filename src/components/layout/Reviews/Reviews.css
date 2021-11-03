@@ -1,0 +1,124 @@
+.wrapper-reviews {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reviews-header {
+  padding-top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(145, 111, 111);
+}
+
+.reviews-content {
+  padding: 20px 0;
+}
+
+.review-flex {
+  display: flex;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.review-flex-left {
+  flex: 0 0 20%;
+  text-align: left;
+}
+
+.review-flex-right {
+  flex: 0 0 80%;
+}
+
+.review-text-name {
+  font-weight: 700;
+  font-size: 17px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.reviewer-square {
+  width: 150px;
+  height: 150px;
+  background: rgb(53, 34, 34);
+}
+.review-text-review {
+  font-size: 15px;
+  color: white;
+  line-height: 1.4;
+}
+
+/* laptop retina screens(13 and 15 macbooks) */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .header-reviews h2 {
+    font-size: 22px;
+  }
+
+  .reviews-content {
+    padding: 0px 15px 15px 15px;
+  }
+
+  .reviews-content h6 {
+    font-size: 16px;
+  }
+
+  .reviews-content p {
+    font-size: 13px;
+    text-indent: 25px;
+  }
+
+  .individual-review p {
+    padding: 0px 15px;
+  }
+}
+
+/* iPad in portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .header-reviews h2 {
+    font-size: 22px;
+  }
+
+  .reviews-content {
+    padding: 0px 10px 15px 10px;
+  }
+
+  .reviews-content h6 {
+    font-size: 17px;
+  }
+
+  .reviews-content p {
+    font-size: 13px;
+    text-indent: 25px;
+  }
+
+  .individual-review p {
+    padding: 0px 15px;
+  }
+}
+
+/* FOR MOBILE PHONES (IPHONE 6 Plus/7 Plus/8 Plus/X/X max) and IPHONE 6/7/8 for (min-device-width: 375px) and (max-device-width: 812px) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3),
+  (min-device-width: 320px) and (max-device-width: 568px) {
+  .header-reviews h2 {
+    font-size: 18px;
+  }
+
+  .reviews-content {
+    padding: 0px 5px 15px 5px;
+  }
+
+  .reviews-content h6 {
+    font-size: 15px;
+  }
+
+  .reviews-content p {
+    font-size: 12px;
+    text-indent: 25px;
+  }
+
+  .individual-review p {
+    padding: 0px 6px;
+  }
+}

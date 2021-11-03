@@ -1,0 +1,174 @@
+.wrapper-heroimage {
+  background-size: 100%, cover !important;
+  background-position: center, top !important;
+  width: 100%;
+  height: 500px;
+  /* position: relative; */
+  animation: animateHeroimage 3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* .wrapper-heroimage:hover {
+  opacity: 0.8;
+  transition: 0.7s ease;
+} */
+
+@keyframes animateHeroimage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.heroimage-content {
+  /* max-width: 1280px; */
+  /* padding: 20px; */
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.heroimage-text {
+  z-index: 100;
+  max-width: 700px;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 40px;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+.heroimage-text-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroimage-text-title {
+  font-size: 32px;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.heroimage-text-average {
+  flex: 0 0 13%;
+  font-size: 23px;
+  color: #fff;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: right;
+}
+
+.span-star3 {
+  font-size: 20px;
+  color: gold;
+  margin-left: 5px;
+}
+
+.heroimage-text-overview {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* laptop retina screens(13 and 15 macbooks) */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .wrapper-heroimage {
+    height: 500px;
+  }
+}
+
+/* iPad in portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .wrapper-heroimage {
+    height: 400px;
+  }
+
+  .heroimage-text-title {
+    font-size: 28px;
+    color: #fff;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .heroimage-text-average {
+    flex: 0 0 13%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.3;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .span-star3 {
+    font-size: 17px;
+    color: gold;
+    margin-left: 5px;
+  }
+
+  .heroimage-text-overview {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+  }
+}
+
+/* FOR MOBILE PHONES (IPHONE 6 Plus/7 Plus/8 Plus/X/X max) and IPHONE 6/7/8 for (min-device-width: 375px) and (max-device-width: 812px) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3),
+  (min-device-width: 320px) and (max-device-width: 568px) {
+  .wrapper-heroimage {
+    height: 320px;
+  }
+
+  .heroimage-content {
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+  }
+
+  .heroimage-text {
+    bottom: 25px;
+  }
+
+  .heroimage-text-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  .heroimage-text-title {
+    flex: 0 0 70%;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  .heroimage-text-average {
+    flex: 0 0 18%;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.3;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: 0px;
+  }
+
+  .span-star3 {
+    font-size: 13px;
+    color: gold;
+    margin-left: 5px;
+  }
+
+  .heroimage-text-overview {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fff;
+  }
+}

@@ -1,0 +1,155 @@
+.personinfobox-content {
+  padding: 50px 15px;
+  display: flex;
+  width: 100%;
+  color: white;
+}
+
+.personinfobox-content-poster {
+  flex: 0 0 25%;
+}
+
+.personinfobox-content-poster img {
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(41, 34, 34);
+  box-shadow: 5px 5px 10px rgba(95, 91, 91, 0.1);
+}
+
+.personinfobox-content-info {
+  flex: 0 0 75%;
+  padding-left: 40px;
+}
+
+.personinfobox-text-name {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.personinfobox-text-info {
+  color: rgb(221, 213, 213);
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.personinfobox-text-biographyheader {
+  color: rgb(221, 213, 213);
+  font-size: 18px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.personinfobox-text-biography {
+  font-size: 16px;
+  /* line-height: 1.6; */
+  color: rgb(196, 167, 167);
+  margin-bottom: 10px;
+}
+
+.wrapper-biography-small {
+  display: none;
+}
+
+/* laptop retina screens(13 and 15 macbooks) */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .wrapper-personinfobox {
+    height: 370px;
+    padding: 25px 10px;
+  }
+
+  .personinfo-content {
+    margin: 0 auto;
+    height: 320px;
+    width: 80%;
+  }
+
+  .personinfo-image {
+    width: 25%;
+  }
+
+  .personinfo-image img {
+    width: 100%;
+    height: 320px;
+  }
+
+  .personinfo-texts {
+    width: 75%;
+    padding: 20px 30px;
+  }
+
+  .personinfo-texts h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .personinfo-texts p {
+    font-size: 18px;
+    margin-top: -15px;
+  }
+
+  .wrapper-biography {
+    padding: 15px 40px;
+    margin: 0 auto;
+  }
+
+  .wrapper-biography h2 {
+    font-size: 22px;
+  }
+  .wrapper-biography p {
+    font-size: 14px;
+    text-indent: 20px;
+  }
+}
+
+/* iPad in portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* FOR MOBILE PHONES (IPHONE 6 Plus/7 Plus/8 Plus/X/X max) and IPHONE 6/7/8 for (min-device-width: 375px) and (max-device-width: 812px) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3),
+  (min-device-width: 320px) and (max-device-width: 568px) {
+  .personinfobox-content {
+    padding: 25px 15px;
+  }
+
+  .personinfobox-content-poster {
+    flex: 0 40%;
+  }
+
+  .personinfobox-content-info {
+    flex: 0 0 57%;
+    padding-left: 15px;
+  }
+
+  .personinfobox-text-name {
+    font-size: 19px;
+  }
+
+  .personinfobox-text-info {
+    font-size: 14px;
+  }
+
+  .wrapper-biography {
+    display: none;
+  }
+
+  .wrapper-biography-small {
+    display: block;
+    padding: 0px 15px;
+  }
+
+  .personinfobox-text-biographyheader {
+    font-size: 15px;
+    margin-top: 0px;
+    /* display: none; */
+  }
+
+  .personinfobox-text-biography {
+    font-size: 14px;
+    /* display: none; */
+  }
+}

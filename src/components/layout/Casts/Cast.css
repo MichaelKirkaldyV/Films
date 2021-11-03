@@ -1,0 +1,164 @@
+.actors-wrapper {
+  background-color: #121620;
+  padding: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.actors-header {
+  padding-top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.actors-container {
+  width: 100%;
+}
+
+.actors-grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.actors-grid-box {
+  flex: 0 0 12.8%;
+  margin-bottom: 15px;
+}
+
+.actors-grid-box-spacer {
+  flex: 0 0 12.8%;
+  margin-bottom: 15px;
+}
+
+.actors-card {
+  width: 100%;
+}
+
+.actors-card img {
+  object-fit: cover;
+  height: 170px;
+  width: 100%;
+  object-position: 0 0;
+  border-radius: 7px;
+  border: 1px solid rgb(41, 34, 34);
+  box-shadow: 5px 5px 10px rgba(95, 91, 91, 0.1);
+}
+
+.actors-card-info {
+  margin-top: 10px;
+}
+
+.actors-text-name {
+  color: rgb(190, 165, 165);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.actors-text-char {
+  font-size: 12px;
+  color: rgb(189, 150, 150);
+  line-height: 1.5;
+}
+
+/* laptop retina screens(13 and 15 macbooks) */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .wrapper-card {
+    width: 85%;
+  }
+
+  .header-casts h2 {
+    font-size: 22px;
+  }
+
+  .container-card h6 {
+    font-size: 14px;
+  }
+
+  .container-card p {
+    font-size: 13px;
+  }
+
+  .container-card {
+    padding: 2px;
+  }
+
+  .wrapper-card img {
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 15%;
+  }
+}
+
+/* iPad in portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .actors-header {
+    font-size: 18px;
+  }
+
+  .actors-grid-box {
+    flex: 0 0 19%;
+    margin-bottom: 6px;
+  }
+
+  .actors-grid-box-spacer {
+    flex: 0 0 32%;
+    margin-bottom: 6px;
+  }
+
+  .actors-card img {
+    height: 160px;
+  }
+
+  .actors-card-info {
+    margin-top: 5px;
+  }
+
+  .actors-text-name {
+    color: rgb(190, 165, 165);
+    font-size: 13px;
+  }
+
+  .actors-text-char {
+    font-size: 12px;
+  }
+}
+
+/* FOR MOBILE PHONES (IPHONE 6 Plus/7 Plus/8 Plus/X/X max) and IPHONE 6/7/8 for (min-device-width: 375px) and (max-device-width: 812px) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3),
+  (min-device-width: 320px) and (max-device-width: 568px) {
+  .actors-header {
+    font-size: 13px;
+  }
+
+  .actors-grid-box {
+    flex: 0 0 32%;
+    margin-bottom: 6px;
+  }
+
+  .actors-grid-box-spacer {
+    flex: 0 0 32%;
+    margin-bottom: 6px;
+  }
+
+  .actors-card img {
+    height: 130px;
+  }
+
+  .actors-card-info {
+    margin-top: 5px;
+  }
+
+  .actors-text-name {
+    color: rgb(190, 165, 165);
+    font-size: 12px;
+  }
+
+  .actors-text-char {
+    font-size: 11px;
+  }
+}

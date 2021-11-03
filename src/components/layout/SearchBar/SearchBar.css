@@ -1,0 +1,105 @@
+.wrapper-searchbar {
+  width: 100%;
+  height: 75px;
+  background: #171b25;
+  position: relative;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.searchbar-content {
+  height: 50px;
+  background: #2b2828;
+  /* margin: 0 auto; */
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+}
+
+.fa-search {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  color: #fff;
+}
+
+.searchbar-input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  height: 40px;
+  color: #fff;
+}
+
+.searchbar-input:focus {
+  outline: none;
+}
+
+.iconsearch {
+  font-size: 35px;
+  margin-top: -5px;
+}
+
+/* laptop retina screens(13 and 15 macbooks) */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+  /* iPad in portrait */ (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .wrapper-searchbar {
+    height: 56px;
+    padding: 9px 20px;
+  }
+
+  .searchbar-content {
+    height: 39px;
+  }
+
+  .fa-search {
+    top: 5px;
+  }
+
+  .searchbar-input {
+    font-size: 25px;
+    left: 20px;
+    top: 2px;
+    height: 35px;
+  }
+
+  .iconsearch {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
+
+/* FOR MOBILE PHONES (IPHONE 6 Plus/7 Plus/8 Plus/X/X max) and IPHONE 6/7/8 for (min-device-width: 375px) and (max-device-width: 812px) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3),
+  (min-device-width: 320px) and (max-device-width: 568px) {
+  .wrapper-searchbar {
+    height: 50px;
+    padding: 8px 20px;
+  }
+
+  .searchbar-content {
+    height: 33px;
+  }
+
+  .fa-search {
+    top: 1px;
+  }
+
+  .searchbar-input {
+    font-size: 18px;
+    left: 15px;
+    top: 0px;
+    height: 35px;
+  }
+
+  .iconsearch {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
